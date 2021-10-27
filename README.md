@@ -4,5 +4,5 @@
 \
 \
 \
-{ 人機互動關係 }\
+{ 人機互動 }\
 <img width="462" alt="Screen Shot 2021-10-28 at 1 17 55 AM" src="https://user-images.githubusercontent.com/44332180/139114740-2a693632-0f7b-4dc1-bce6-05b4b21a384d.png">
