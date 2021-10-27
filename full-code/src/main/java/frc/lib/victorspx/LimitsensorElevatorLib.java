@@ -14,7 +14,6 @@ public class LimitsensorElevatorLib {
     boolean down;
     
     public void init() {
-        
     }
 
     public void run() {
@@ -51,8 +50,7 @@ public class LimitsensorElevatorLib {
             }
         }
         
-   
-        
+      
     }
 
 }
