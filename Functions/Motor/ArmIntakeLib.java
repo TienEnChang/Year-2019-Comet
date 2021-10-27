@@ -64,25 +64,25 @@ public class ArmIntakeLib {
                 run=0.0;
             }
         }
-        else if(Robot.Operator.getY(Hand.kRight) < -0.2&&noenctag)
-         {
+        else if(Robot.Operator.getY(Hand.kRight) < -0.2&&noenctag) {
             Robot.Arm.set(ControlMode.PercentOutput,0.2);
-         }
-            else if(Robot.Operator.getY(Hand.kRight) > 0.2&&!noenctag) {
+        }
+        else if(Robot.Operator.getY(Hand.kRight) > 0.2&&!noenctag) {
             //100~20
             if(armAngle>30){
-            Robot.Arm.set(ControlMode.PercentOutput,-0.7);
-            run=-0.8;}
+                Robot.Arm.set(ControlMode.PercentOutput,-0.7);
+                run=-0.8;
+            }
             else if(armAngle>30){
                 encAngle =10;
                 Robot.Arm.set(ControlMode.PercentOutput,-0.4);
                 run=-0.4;
-                }
+            }
             
-            }
-            else if(Robot.Operator.getY(Hand.kRight) > 0.2&&noenctag) {
-                Robot.Arm.set(ControlMode.PercentOutput,-0.4);
-            }
+        }
+        else if(Robot.Operator.getY(Hand.kRight) > 0.2&&noenctag) {
+            Robot.Arm.set(ControlMode.PercentOutput,-0.4);
+        }
             
             
             
@@ -92,22 +92,24 @@ public class ArmIntakeLib {
             
             
 
-         else if(!noenctag) {
-             if(encAngle==10){
-            if(armAngle<20){
-                Robot.Arm.set(ControlMode.PercentOutput,0.03*(encAngle-round(armAngle)));
-                run=0.03*(encAngle-round(armAngle));
+        else if(!noenctag) {
+            if(encAngle==10){
+                if(armAngle<20){
+                    Robot.Arm.set(ControlMode.PercentOutput,0.03*(encAngle-round(armAngle)));
+                    run=0.03*(encAngle-round(armAngle));
                 }
             }
         }
         else{
             Robot.Arm.set(ControlMode.PercentOutput,0.0);
         }
+
         smartDashboard.putNumber("angle",armAngle);
         smartDashboard.putNumber("angle",armAngle);
         smartDashboard.putNumber("run",run);
 
     }
+
     private double round(double angle) {
 
         if((-sampleEncoder.get()+clear) < 0) {
@@ -124,6 +126,7 @@ public class ArmIntakeLib {
     public void reset(){
         sampleEncoder.reset();
     }
+
     public void noenc(){
 
     }
