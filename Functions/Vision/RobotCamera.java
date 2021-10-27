@@ -21,6 +21,7 @@ public class RobotCamera {
 	private CvSink imageSink1;
     private CvSource imageSource1;
     
+	
 	public RobotCamera(int num) {
 		n = num;
 		ModeCount = 0;
