@@ -7,11 +7,14 @@ import edu.wpi.first.wpilibj.smartdashboard.*;
 import org.usfirst.frc.team7636.robot.*;
 
 public class LimitsensorElevatorLib {
+
     SmartDashboard smartDashboard;
     boolean top= false;
     boolean middle=false;
     boolean down;
+    
     public void init() {
+        
     }
 
     public void run() {
