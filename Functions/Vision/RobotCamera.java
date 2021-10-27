@@ -8,8 +8,6 @@ import edu.wpi.cscore.VideoMode;
 import edu.wpi.cscore.VideoSink;
 import edu.wpi.first.cameraserver.CameraServer;
 
-//import org.usfirst.frc.team7636.robot.*;
-
 public class RobotCamera {
 
 	private int n;
