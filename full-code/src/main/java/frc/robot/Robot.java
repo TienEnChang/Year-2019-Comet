@@ -22,6 +22,7 @@ import org.usfirst.frc.team7636.lib.*;
 import org.usfirst.frc.team7636.lib.victorspx.*;
 import org.usfirst.frc.team7636.lib.victorspx.compassdrive.*;
 
+
 public class Robot extends TimedRobot {
 
     // This part is used for declaring variables and objects

@@ -5,4 +5,4 @@
 \
 \
 { 人機互動圖 }\
-<img width="462" alt="Screen Shot 2021-10-28 at 1 17 55 AM" src="https://user-images.githubusercontent.com/44332180/139114740-2a693632-0f7b-4dc1-bce6-05b4b21a384d.png">
+![Screen Shot 2021-10-28 at 2 32 12 AM](https://user-images.githubusercontent.com/44332180/139131749-eec468e9-8a0e-45da-8925-54f4e668a4a7.jpeg)
