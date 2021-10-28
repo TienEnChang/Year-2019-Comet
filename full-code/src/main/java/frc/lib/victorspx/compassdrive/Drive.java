@@ -108,34 +108,16 @@ public class Drive {
 
     private double MotionControl(double aimAngle, double robotAngle) {
 
-        double value = 0;
+        double error = aimAngle - robotAngle;
 
-        double speed = Math.sqrt( Math.pow((aimAngle - robotAngle),2) );
+        if(error >= 2){
+            return 0.2 +0.8*(error/180)^2;
 
-        if((speed >= 2) && (speed < 12)) {
-            value = -0.2;
-
-        } else if((speed >= 12) && (speed < 32)) {
-            value = -0.3 + 0.1 *((speed - 32) / 20);
-
-        } else if((speed >= 32) && (speed < 62)) {
-            value = -0.4 + 0.1 *((speed - 62) / 30);
-
-        } else if((speed >= 62) && (speed < 112)) {
-            value = -0.6 + 0.2 *((speed - 112) / 50);
-
-        } else if((speed >= 112) && (speed < 182)) {
-            value = -0.8 + 0.2 *((speed - 182) / 70);
+        }else if(error <= -2){
+            return -0.2 -0.8*(error/180)^2;
         }
 
-        if((aimAngle - robotAngle) >= 2){
-            value = -value;
-
-        } else if(((aimAngle - robotAngle) >= -2) && ((aimAngle - robotAngle) <= 2)){
-            value = 0;
-        }
-
-        return value;
+        return 0;
     }
     
 }
