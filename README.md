@@ -4,12 +4,8 @@
 \
 \
 { 環境設置 }\
-Docker Image
-```
-docker pull wpilib/roborio-cross-ubuntu
-```
-VSCode Extension\
-[WPILib - Official](https://marketplace.visualstudio.com/items?itemName=wpilibsuite.vscode-wpilib)
+VSCode extension: [WPILib](https://marketplace.visualstudio.com/items?itemName=wpilibsuite.vscode-wpilib)\
+Docker image: [wpilib/roborio-cross-ubuntu](https://hub.docker.com/r/wpilib/roborio-cross-ubuntu)
 \
 \
 { 人機互動圖 }\
