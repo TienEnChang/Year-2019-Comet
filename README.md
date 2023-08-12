@@ -7,12 +7,10 @@
 ![Screen Shot 2021-10-28 at 2 32 12 AM](https://user-images.githubusercontent.com/44332180/139131749-eec468e9-8a0e-45da-8925-54f4e668a4a7.jpeg)
 \
 \
-Docker Pull
+{ 環境設置 }\
+Docker Image
 ```
-docker pull strapi/strapi
+docker pull wpilib/roborio-cross-ubuntu
 ```
-Setup
-```
-cd API-Repo
-docker run -it -p 1337:1337 -v `pwd`:/srv/app strapi/strapi
-```
+VSCode Extension
+[WPILib - Official](https://marketplace.visualstudio.com/items?itemName=wpilibsuite.vscode-wpilib)
